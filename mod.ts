@@ -5,6 +5,7 @@ import { exec, OutputMode } from "https://deno.land/x/exec/mod.ts";
 const wait = (ms: number) => new Promise(r => setTimeout(r, ms));
 
 const TITLE = "Yubi Tap Notifier";
+const dirname = Deno.execPath().split('/').slice(0, -1).join('/');
 
 const systray = new SysTray({
   menu: {
@@ -19,7 +20,7 @@ const systray = new SysTray({
       },
     ],
   },
-  directory: "bin", // cache directory of binary package
+  directory: dirname + '/bin', // cache directory of binary package
 });
 
 systray.on("ready", () => {
