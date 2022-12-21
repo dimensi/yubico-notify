@@ -1,0 +1,17 @@
+{
+  "name": "yubico-notify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "execa": "^6.1.0",
+    "node-notifier": "^10.0.1"
+  }
+}
